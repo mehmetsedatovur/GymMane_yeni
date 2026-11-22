@@ -58,6 +58,7 @@ class _AddFoodSheetState extends State<_AddFoodSheet> {
   FoodCat? _cat;
   String? _group;
   bool _dishes = false;
+  String? _dishCat;
 
   @override
   void initState() {
@@ -185,6 +186,7 @@ class _AddFoodSheetState extends State<_AddFoodSheet> {
               ),
               onTap: () => setState(() {
                 _dishes = !_dishes;
+                _dishCat = null;
                 _cat = null;
                 _group = null;
               }),
@@ -245,6 +247,73 @@ class _AddFoodSheetState extends State<_AddFoodSheet> {
             ],
           ],
         ),
+      );
+
+  Widget _dishCats(GymColors gc) => SizedBox(
+        height: 38,
+        child: ListView(
+          key: const PageStorageKey('h-dish-cats'),
+          scrollDirection: Axis.horizontal,
+          clipBehavior: Clip.none,
+          children: [
+            for (final c in <String?>[null, ...kDishCats]) ...[
+              Pressable(
+                onTap: () {
+                  HapticFeedback.selectionClick();
+                  setState(() => _dishCat = c);
+                },
+                scale: 0.95,
+                child: AnimatedContainer(
+                  duration: const Duration(milliseconds: 180),
+                  padding: const EdgeInsets.symmetric(horizontal: 14),
+                  alignment: Alignment.center,
+                  decoration: BoxDecoration(
+                    color: _dishCat == c ? gc.accentSoft : gc.bgRaised2,
+                    borderRadius: BorderRadius.circular(100),
+                    border: Border.all(
+                        color: _dishCat == c ? gc.accent.withValues(alpha: 0.75) : Colors.transparent, width: 1.5),
+                  ),
+                  child: Text(
+                    c == null ? dishAllName(appLanguage) : '${dishCatEmoji(c)}  ${dishCatName(c, appLanguage)}',
+                    style: AppTheme.f(12.5,
+                        weight: FontWeight.w700, color: _dishCat == c ? gc.accent : gc.textSecondary),
+                  ),
+                ),
+              ),
+              const SizedBox(width: 8),
+            ],
+          ],
+        ),
+      );
+
+  Widget _dishLegend(GymColors gc) {
+    Widget item(Color c, String label) => Padding(
+          padding: const EdgeInsets.only(right: 14),
+          child: Row(mainAxisSize: MainAxisSize.min, children: [
+            Container(width: 6, height: 6, decoration: BoxDecoration(color: c, shape: BoxShape.circle)),
+            const SizedBox(width: 4),
+            Text(sentenceCase(label), style: AppTheme.f(10.5, weight: FontWeight.w600, color: gc.textTertiary)),
+          ]),
+        );
+    return Padding(
+      padding: const EdgeInsets.only(top: 12, left: 2),
+      child: Row(children: [
+        item(gc.protein, t.macroProtein),
+        item(gc.carbs, t.macroCarbs),
+        item(gc.fat, t.macroFat),
+      ]),
+    );
+  }
+
+  Widget _dishGrid(List<Recipe> list) => SliverGrid.builder(
+        gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+          crossAxisCount: 2,
+          mainAxisSpacing: 10,
+          crossAxisSpacing: 10,
+          mainAxisExtent: 178,
+        ),
+        itemCount: list.length,
+        itemBuilder: (context, i) => _DishCard(recipe: list[i], onTap: () => _openRecipe(list[i])),
       );
 
   Widget _groupArt(GymColors gc, FoodGroup g) {
@@ -328,7 +397,7 @@ class _AddFoodSheetState extends State<_AddFoodSheet> {
   Widget _recipeRow(Recipe r) => _FoodRow(
         leading: FoodPlate(items: _plateOf(r.items), size: 40, photo: r.photo),
         title: r.name,
-        detail: '${_energy(r.total.kcal)} · ${t.recipeItems(r.items.length)}',
+        detail: '${_energy(r.total.kcal)} · ${_g(r.total.protein)} g ${sentenceCase(t.macroProtein)}',
         onTap: () => _openRecipe(r),
       );
 
@@ -339,8 +408,10 @@ class _AddFoodSheetState extends State<_AddFoodSheet> {
     final picking = widget.onPick != null;
     final grouped = _group != null;
     final browsing = q.isNotEmpty || _cat != null || _dishes || grouped;
-    final recipes = _cat != null || grouped ? const <Recipe>[] : fit.searchRecipes(q);
-    final dishes = _cat != null || grouped || (q.isEmpty && !_dishes) ? const <Recipe>[] : fit.searchDishes(q);
+    final recipes = _cat != null || grouped || (_dishes && q.isEmpty) ? const <Recipe>[] : fit.searchRecipes(q);
+    final dishes = _cat != null || grouped || (q.isEmpty && !_dishes)
+        ? const <Recipe>[]
+        : fit.searchDishes(q, cat: _dishes ? _dishCat : null);
     final mine = _dishes ? const <FoodItem>[] : fit.searchFoods(q, cat: _cat, group: _group);
     final library = _dishes || grouped ? const <FoodItem>[] : _library(q);
     final recents = browsing ? const <FoodItem>[] : fit.recentLibraryFoods;
@@ -385,9 +456,9 @@ class _AddFoodSheetState extends State<_AddFoodSheet> {
           },
         ),
       ],
-      if (recipes.isNotEmpty || (!picking && _cat == null && !grouped && q.isEmpty)) ...[
+      if (recipes.isNotEmpty || (!picking && _cat == null && !grouped && !_dishes && q.isEmpty)) ...[
         _section(gc, t.savedMeals),
-        if (!picking && _cat == null && !grouped && q.isEmpty)
+        if (!picking && _cat == null && !grouped && !_dishes && q.isEmpty)
           _FoodRow(
             leading: Container(
               width: 38,
@@ -404,9 +475,15 @@ class _AddFoodSheetState extends State<_AddFoodSheet> {
           ),
         for (final r in recipes) _recipeRow(r),
       ],
+      if (_dishes) ...[
+        const SizedBox(height: 2),
+        _dishCats(gc),
+        _dishLegend(gc),
+      ],
       if (dishes.isNotEmpty) ...[
-        _section(gc, t.readyDishes, trailing: _dishes && q.isEmpty ? '${dishes.length}' : null),
-        for (final r in dishes) _recipeRow(r),
+        _section(gc, _dishes && _dishCat != null ? dishCatName(_dishCat!, appLanguage) : t.readyDishes,
+            trailing: _dishes ? '${dishes.length}' : null),
+        if (_dishes) _dishGrid(dishes) else for (final r in dishes) _recipeRow(r),
       ],
       if (mine.isNotEmpty) ...[
         _section(gc, grouped ? (fit.foodGroupById(_group!)?.name ?? t.myFoods) : t.myFoods,
@@ -557,6 +634,51 @@ class _FoodTile extends StatelessWidget {
           style: AppTheme.f(10, weight: FontWeight.w600, color: gc.textTertiary),
         ),
       ]),
+    );
+  }
+}
+
+class _DishCard extends StatelessWidget {
+  const _DishCard({required this.recipe, required this.onTap});
+
+  final Recipe recipe;
+  final VoidCallback onTap;
+
+  @override
+  Widget build(BuildContext context) {
+    final gc = context.gc;
+    final m = recipe.total;
+    Widget macro(double v, Color c) => Row(mainAxisSize: MainAxisSize.min, children: [
+          Container(width: 6, height: 6, decoration: BoxDecoration(color: c, shape: BoxShape.circle)),
+          const SizedBox(width: 3),
+          Text('${v.round()}', style: AppTheme.f(11, weight: FontWeight.w700, color: gc.textSecondary)),
+        ]);
+    return Pressable(
+      onTap: onTap,
+      scale: 0.96,
+      child: Container(
+        padding: const EdgeInsets.fromLTRB(12, 12, 12, 10),
+        decoration: BoxDecoration(color: gc.bgRaised2, borderRadius: BorderRadius.circular(22)),
+        child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+          Center(child: FoodPlate(items: _plateOf(recipe.items), size: 72, photo: recipe.photo)),
+          const SizedBox(height: 8),
+          Expanded(
+            child: Text(recipe.name,
+                maxLines: 2,
+                overflow: TextOverflow.ellipsis,
+                style: AppTheme.f(13, weight: FontWeight.w700, color: gc.text, height: 1.2)),
+          ),
+          Text(_energy(m.kcal), style: AppTheme.f(12.5, weight: FontWeight.w800, color: gc.accent)),
+          const SizedBox(height: 4),
+          Row(children: [
+            macro(m.protein, gc.protein),
+            const SizedBox(width: 10),
+            macro(m.carbs, gc.carbs),
+            const SizedBox(width: 10),
+            macro(m.fat, gc.fat),
+          ]),
+        ]),
+      ),
     );
   }
 }
