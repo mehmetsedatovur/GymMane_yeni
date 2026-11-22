@@ -320,6 +320,14 @@ void main() {
       }
     });
 
+    test('cada plato tiene categoría válida y nombre turco', () {
+      for (final d in FoodLibrary.dishes) {
+        expect(kDishCats, contains(d.cat), reason: d.id);
+        expect(d.names['tr'], isNotEmpty, reason: d.id);
+      }
+      expect(FoodLibrary.searchDishes('', 'tr', cat: 'soup'), isNotEmpty);
+    });
+
     test('el arroz del plato va en peso cocido y se apunta en crudo', () {
       final r = fit.dishRecipe(FoodLibrary.dishes.firstWhere((d) => d.id == 'chicken-rice'));
       final rice = r.items.firstWhere((e) => e.foodId == 'a:rice');
