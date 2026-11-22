@@ -1,28 +1,54 @@
-id	en	es	items
-coffee-milk	Coffee with milk	Café con leche	espresso:30 2-milk:150
-cortado	Cortado	Cortado	espresso:30 2-milk:40
-cocoa-milk	Chocolate milk	Leche con cacao	2-milk:250 cocoa-powder:10 sugar:8
-tomato-toast	Toast with tomato and olive oil	Tostada con tomate y aceite	bread:60 tomato:50 olive-oil:5
-ham-toast	Toast with tomato and ham	Tostada con tomate y jamón	bread:60 tomato:40 olive-oil:5 serrano-ham:30
-avocado-toast	Avocado toast with egg	Tostada de aguacate y huevo	bread:60 avocado:70 egg:50 olive-oil:5
-pb-toast	Peanut butter and banana toast	Tostada con crema de cacahuete y plátano	bread:60 peanut-butter:20 banana:60
-oatmeal	Oatmeal with banana	Avena con plátano	rolled-oats:50 2-milk:200 banana:100 honey:10
-yogurt-granola	Yogurt with granola and berries	Yogur con granola y arándanos	greek-yogurt:150 granola:30 blueberry:50
-scrambled-eggs	Scrambled eggs	Huevos revueltos	egg:150 olive-oil:5
-chicken-rice-broccoli	Chicken, rice and broccoli	Pollo, arroz y brócoli	chicken-breast:150 rice:200c broccoli:100 olive-oil:5
-chicken-rice	Chicken and rice	Arroz con pollo	rice:250c chicken-breast:150 olive-oil:10
-cuban-rice	Rice with tomato and fried egg	Arroz a la cubana	rice:200c tomato-sauce:80 egg:60 olive-oil:10
-macaroni-tomato	Macaroni with tomato	Macarrones con tomate	elbow-macaroni:90 tomato-sauce:70 grated-parmesan-cheese:10 olive-oil:5
-bolognese	Spaghetti bolognese	Espaguetis a la boloñesa	spaghetti:90 ground-beef:100 tomato-sauce:80 onion:30 olive-oil:5
-lentil-stew	Lentil stew	Lentejas guisadas	lentils:70 potato:80 carrot:40 onion:30 chorizo:25 olive-oil:5
-chickpeas-spinach	Chickpeas with spinach	Garbanzos con espinacas	chickpeas:70 spinach:100 garlic:5 olive-oil:10
-spanish-omelette	Spanish omelette	Tortilla de patatas	egg:100 potato:150 onion:30 olive-oil:15
-mixed-salad	Mixed salad	Ensalada mixta	lettuce:80 tomato:80 onion:20 canned-tuna-water:50 egg:50 olive-oil:10
-chicken-salad	Grilled chicken with salad	Pollo a la plancha con ensalada	chicken-breast:180 lettuce:60 tomato:80 olive-oil:10
-salmon-potatoes	Salmon with potatoes	Salmón con patatas	salmon:150 potato:200 olive-oil:5
-steak-fries	Steak and fries	Filete con patatas fritas	beef-steak:150 frozen-fries:150 olive-oil:10
-burger	Cheeseburger	Hamburguesa con queso	hamburger-bun:60 ground-beef:120 thin-sliced-cheese:20 lettuce:15 tomato:30 ketchup:15
-pizza	Margherita pizza	Pizza margarita	pizza-dough:120 tomato-sauce:50 mozzarella-cheese:80 olive-oil:5
-chicken-wrap	Chicken wrap	Wrap de pollo	tortilla:60 chicken-breast:100 lettuce:30 tomato:40 cheddar-cheese:20
-ham-sandwich	Serrano ham baguette	Bocadillo de jamón	baguette:100 serrano-ham:40 tomato:30 olive-oil:5
-ham-cheese-toastie	Ham and cheese toastie	Sándwich mixto	white-bread:60 sandwich-meat:30 thin-sliced-cheese:20 butter:5
+id	en	es	tr	items
+coffee-milk	Coffee with milk	Café con leche	Sütlü kahve	espresso:30 2-milk:150
+cortado	Cortado	Cortado	Cortado	espresso:30 2-milk:40
+cocoa-milk	Chocolate milk	Leche con cacao	Kakaolu süt	2-milk:250 cocoa-powder:10 sugar:8
+tomato-toast	Toast with tomato and olive oil	Tostada con tomate y aceite	Domatesli zeytinyağlı ekmek	bread:60 tomato:50 olive-oil:5
+ham-toast	Toast with tomato and ham	Tostada con tomate y jamón	Domatesli jambonlu tost	bread:60 tomato:40 olive-oil:5 serrano-ham:30
+avocado-toast	Avocado toast with egg	Tostada de aguacate y huevo	Yumurtalı avokadolu tost	bread:60 avocado:70 egg:50 olive-oil:5
+pb-toast	Peanut butter and banana toast	Tostada con crema de cacahuete y plátano	Fıstık ezmeli muzlu tost	bread:60 peanut-butter:20 banana:60
+oatmeal	Oatmeal with banana	Avena con plátano	Muzlu yulaf lapası	rolled-oats:50 2-milk:200 banana:100 honey:10
+yogurt-granola	Yogurt with granola and berries	Yogur con granola y arándanos	Granola ve meyveli yoğurt	greek-yogurt:150 granola:30 blueberry:50
+scrambled-eggs	Scrambled eggs	Huevos revueltos	Çırpılmış yumurta	egg:150 olive-oil:5
+chicken-rice-broccoli	Chicken, rice and broccoli	Pollo, arroz y brócoli	Tavuk, pilav ve brokoli	chicken-breast:150 rice:200c broccoli:100 olive-oil:5
+chicken-rice	Chicken and rice	Arroz con pollo	Tavuklu pilav	rice:250c chicken-breast:150 olive-oil:10
+cuban-rice	Rice with tomato and fried egg	Arroz a la cubana	Domates soslu yumurtalı pilav	rice:200c tomato-sauce:80 egg:60 olive-oil:10
+macaroni-tomato	Macaroni with tomato	Macarrones con tomate	Domates soslu makarna	elbow-macaroni:90 tomato-sauce:70 grated-parmesan-cheese:10 olive-oil:5
+bolognese	Spaghetti bolognese	Espaguetis a la boloñesa	Bolonez soslu spagetti	spaghetti:90 ground-beef:100 tomato-sauce:80 onion:30 olive-oil:5
+lentil-stew	Lentil stew	Lentejas guisadas	Yeşil mercimek yemeği	lentils:70 potato:80 carrot:40 onion:30 olive-oil:5
+chickpeas-spinach	Chickpeas with spinach	Garbanzos con espinacas	Ispanaklı nohut	chickpeas:70 spinach:100 garlic:5 olive-oil:10
+spanish-omelette	Spanish omelette	Tortilla de patatas	Patatesli omlet	egg:100 potato:150 onion:30 olive-oil:15
+mixed-salad	Mixed salad	Ensalada mixta	Karışık salata	lettuce:80 tomato:80 onion:20 canned-tuna-water:50 egg:50 olive-oil:10
+chicken-salad	Grilled chicken with salad	Pollo a la plancha con ensalada	Tavuklu salata	chicken-breast:180 lettuce:60 tomato:80 olive-oil:10
+salmon-potatoes	Salmon with potatoes	Salmón con patatas	Somon ve patates	salmon:150 potato:200 olive-oil:5
+steak-fries	Steak and fries	Filete con patatas fritas	Biftek ve patates kızartması	beef-steak:150 frozen-fries:150 olive-oil:10
+burger	Cheeseburger	Hamburguesa con queso	Peynirli hamburger	hamburger-bun:60 ground-beef:120 thin-sliced-cheese:20 lettuce:15 tomato:30 ketchup:15
+pizza	Margherita pizza	Pizza margarita	Margarita pizza	pizza-dough:120 tomato-sauce:50 mozzarella-cheese:80 olive-oil:5
+chicken-wrap	Chicken wrap	Wrap de pollo	Tavuk dürüm	tortilla:60 chicken-breast:100 lettuce:30 tomato:40 cheddar-cheese:20
+ham-sandwich	Serrano ham baguette	Bocadillo de jamón	Jambonlu baget sandviç	baguette:100 serrano-ham:40 tomato:30 olive-oil:5
+ham-cheese-toastie	Ham and cheese toastie	Sándwich mixto	Kaşarlı jambonlu tost	white-bread:60 sandwich-meat:30 thin-sliced-cheese:20 butter:5
+menemen	Turkish scrambled eggs with tomato and pepper	Huevos turcos con tomate y pimiento	Menemen	egg:100 tomato:150 green-bell-pepper:50 onion:20 olive-oil:8
+sucuklu-yumurta	Eggs with Turkish sausage	Huevos con sucuk	Sucuklu yumurta	egg:100 sucuk:40
+cheese-omelette	Cheese omelette	Tortilla de queso	Peynirli omlet	egg:100 white-cheese:35 olive-oil:5
+turkish-breakfast	Turkish breakfast plate	Desayuno turco	Kahvaltı tabağı	egg:50 white-cheese:40 kalamata-olives:20 tomato:60 cucumber:60 bread:50
+simit-ayran	Simit and ayran	Simit y ayran	Simit ve ayran	simit:100 ayran:250
+lentil-soup	Turkish lentil soup	Sopa turca de lentejas	Mercimek çorbası	lentils:45 carrot:30 onion:25 olive-oil:5
+white-bean-stew	White bean stew	Guiso de alubias blancas	Kuru fasulye	white-beans:80 tomato-sauce:60 onion:30 olive-oil:8
+bulgur-pilaf	Bulgur pilaf	Pilaf de bulgur	Bulgur pilavı	bulgur:70 onion:20 tomato-sauce:40 olive-oil:8
+stuffed-peppers	Stuffed peppers with rice and beef	Pimientos rellenos de arroz y carne	Biber dolması	green-bell-pepper:150 rice:50 ground-beef:60 onion:20 tomato-sauce:30 olive-oil:5
+zucchini-fritters	Zucchini fritters	Tortitas de calabacín	Mücver	zucchini:150 egg:50 flour:20 white-cheese:20 olive-oil:8
+spinach-eggs	Spinach with eggs	Espinacas con huevo	Ispanaklı yumurta	spinach:150 egg:100 onion:20 olive-oil:5
+tuna-sandwich	Tuna sandwich	Sándwich de atún	Ton balıklı sandviç	whole-wheat-bread:80 canned-tuna-water:70 lettuce:20 tomato:30 plain-yogurt:10
+chickpea-salad	Chickpea salad	Ensalada de garbanzos	Nohut salatası	chickpeas:100 tomato:60 cucumber:50 parsley:10 lemon-juice:10 olive-oil:5
+yogurt-cucumber	Yogurt with cucumber and mint	Yogur con pepino y menta	Cacık	plain-yogurt:180 cucumber:80 garlic:3 olive-oil:3
+ayran	Ayran	Ayran	Ayran	ayran:250
+tahini-pekmez	Tahini and grape molasses	Tahini y melaza de uva	Tahin-pekmez	tahini:15 grape-molasses:20
+chicken-bulgur	Chicken with bulgur	Pollo con bulgur	Tavuklu bulgur pilavı	chicken-breast:150 bulgur:70 onion:20 olive-oil:8
+beef-vegetable-saute	Beef and vegetable sauté	Salteado de ternera y verduras	Etli sebze sote	beef-strips:130 zucchini:80 red-bell-pepper:50 onion:30 olive-oil:8
+potato-egg	Potato and egg skillet	Patatas con huevo	Patatesli yumurta	potato:180 egg:100 onion:20 olive-oil:8
+tomato-cucumber-salad	Tomato and cucumber salad	Ensalada de tomate y pepino	Domates salatalık salatası	tomato:120 cucumber:100 onion:20 lemon-juice:10 olive-oil:5
+cheese-toast	Cheese toast	Tostada de queso	Peynirli tost	whole-wheat-bread:70 white-cheese:35 tomato:30
+sucuk-toast	Turkish sausage toast	Tostada de sucuk	Sucuklu tost	white-bread:70 sucuk:25 thin-sliced-cheese:20
+yogurt-oats-fruit	Yogurt, oats and banana	Yogur con avena y plátano	Yoğurtlu yulaf ve muz	plain-yogurt:150 rolled-oats:35 banana:80
+bean-salad	White bean salad	Ensalada de alubias blancas	Piyaz	white-beans:100 onion:30 parsley:10 tomato:50 olive-oil:8 lemon-juice:10
+chicken-vegetable-rice	Chicken, vegetable and rice bowl	Pollo con arroz y verduras	Sebzeli tavuklu pilav	chicken-breast:120 rice:180c carrot:40 green-bell-pepper:40 olive-oil:8
+grilled-cheese-salad	White cheese salad	Ensalada de queso blanco	Beyaz peynirli salata	lettuce:80 tomato:80 cucumber:60 white-cheese:40 olive-oil:5
