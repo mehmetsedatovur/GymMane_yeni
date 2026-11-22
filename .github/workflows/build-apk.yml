@@ -54,7 +54,7 @@ jobs:
 
       # ABI splits keep each APK small instead of one fat APK.
       - name: Build split APKs
-        run: flutter build apk --release --split-per-abi
+        run: flutter build apk --debug --split-per-abi
 
       - name: Rename APKs
         run: |
