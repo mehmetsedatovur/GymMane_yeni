@@ -796,7 +796,8 @@ mixin NutritionState on FitCore, ToolsState, StatsState {
         ],
       );
 
-  List<Recipe> searchDishes(String query) => [for (final d in FoodLibrary.searchDishes(query, appLanguage)) dishRecipe(d)];
+  List<Recipe> searchDishes(String query, {String? cat}) =>
+      [for (final d in FoodLibrary.searchDishes(query, appLanguage, cat: cat)) dishRecipe(d)];
 
   bool isOwnRecipe(String id) => recipes.any((r) => r.id == id);
 
