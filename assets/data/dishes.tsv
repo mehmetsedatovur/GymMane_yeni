@@ -1,28 +1,160 @@
-id	en	es	items
-coffee-milk	Coffee with milk	Café con leche	espresso:30 2-milk:150
-cortado	Cortado	Cortado	espresso:30 2-milk:40
-cocoa-milk	Chocolate milk	Leche con cacao	2-milk:250 cocoa-powder:10 sugar:8
-tomato-toast	Toast with tomato and olive oil	Tostada con tomate y aceite	bread:60 tomato:50 olive-oil:5
-ham-toast	Toast with tomato and ham	Tostada con tomate y jamón	bread:60 tomato:40 olive-oil:5 serrano-ham:30
-avocado-toast	Avocado toast with egg	Tostada de aguacate y huevo	bread:60 avocado:70 egg:50 olive-oil:5
-pb-toast	Peanut butter and banana toast	Tostada con crema de cacahuete y plátano	bread:60 peanut-butter:20 banana:60
-oatmeal	Oatmeal with banana	Avena con plátano	rolled-oats:50 2-milk:200 banana:100 honey:10
-yogurt-granola	Yogurt with granola and berries	Yogur con granola y arándanos	greek-yogurt:150 granola:30 blueberry:50
-scrambled-eggs	Scrambled eggs	Huevos revueltos	egg:150 olive-oil:5
-chicken-rice-broccoli	Chicken, rice and broccoli	Pollo, arroz y brócoli	chicken-breast:150 rice:200c broccoli:100 olive-oil:5
-chicken-rice	Chicken and rice	Arroz con pollo	rice:250c chicken-breast:150 olive-oil:10
-cuban-rice	Rice with tomato and fried egg	Arroz a la cubana	rice:200c tomato-sauce:80 egg:60 olive-oil:10
-macaroni-tomato	Macaroni with tomato	Macarrones con tomate	elbow-macaroni:90 tomato-sauce:70 grated-parmesan-cheese:10 olive-oil:5
-bolognese	Spaghetti bolognese	Espaguetis a la boloñesa	spaghetti:90 ground-beef:100 tomato-sauce:80 onion:30 olive-oil:5
-lentil-stew	Lentil stew	Lentejas guisadas	lentils:70 potato:80 carrot:40 onion:30 chorizo:25 olive-oil:5
-chickpeas-spinach	Chickpeas with spinach	Garbanzos con espinacas	chickpeas:70 spinach:100 garlic:5 olive-oil:10
-spanish-omelette	Spanish omelette	Tortilla de patatas	egg:100 potato:150 onion:30 olive-oil:15
-mixed-salad	Mixed salad	Ensalada mixta	lettuce:80 tomato:80 onion:20 canned-tuna-water:50 egg:50 olive-oil:10
-chicken-salad	Grilled chicken with salad	Pollo a la plancha con ensalada	chicken-breast:180 lettuce:60 tomato:80 olive-oil:10
-salmon-potatoes	Salmon with potatoes	Salmón con patatas	salmon:150 potato:200 olive-oil:5
-steak-fries	Steak and fries	Filete con patatas fritas	beef-steak:150 frozen-fries:150 olive-oil:10
-burger	Cheeseburger	Hamburguesa con queso	hamburger-bun:60 ground-beef:120 thin-sliced-cheese:20 lettuce:15 tomato:30 ketchup:15
-pizza	Margherita pizza	Pizza margarita	pizza-dough:120 tomato-sauce:50 mozzarella-cheese:80 olive-oil:5
-chicken-wrap	Chicken wrap	Wrap de pollo	tortilla:60 chicken-breast:100 lettuce:30 tomato:40 cheddar-cheese:20
-ham-sandwich	Serrano ham baguette	Bocadillo de jamón	baguette:100 serrano-ham:40 tomato:30 olive-oil:5
-ham-cheese-toastie	Ham and cheese toastie	Sándwich mixto	white-bread:60 sandwich-meat:30 thin-sliced-cheese:20 butter:5
+id	en	es	tr	items	cat
+coffee-milk	Coffee with milk	Café con leche	Sütlü kahve	espresso:30 2-milk:150	drink
+cortado	Cortado	Cortado	Cortado	espresso:30 2-milk:40	drink
+cocoa-milk	Chocolate milk	Leche con cacao	Kakaolu süt	2-milk:250 cocoa-powder:10 sugar:8	drink
+tomato-toast	Toast with tomato and olive oil	Tostada con tomate y aceite	Domatesli zeytinyağlı tost	bread:60 tomato:50 olive-oil:5	breakfast
+ham-toast	Toast with tomato and ham	Tostada con tomate y jamón	Domatesli jambonlu tost	bread:60 tomato:40 olive-oil:5 serrano-ham:30	breakfast
+avocado-toast	Avocado toast with egg	Tostada de aguacate y huevo	Yumurtalı avokado tostu	bread:60 avocado:70 egg:50 olive-oil:5	breakfast
+pb-toast	Peanut butter and banana toast	Tostada con crema de cacahuete y plátano	Fıstık ezmeli muzlu tost	bread:60 peanut-butter:20 banana:60	breakfast
+oatmeal	Oatmeal with banana	Avena con plátano	Muzlu yulaf	rolled-oats:50 2-milk:200 banana:100 honey:10	breakfast
+yogurt-granola	Yogurt with granola and berries	Yogur con granola y arándanos	Yoğurt, granola ve yaban mersini	greek-yogurt:150 granola:30 blueberry:50	breakfast
+scrambled-eggs	Scrambled eggs	Huevos revueltos	Çırpılmış yumurta	egg:150 olive-oil:5	breakfast
+chicken-rice-broccoli	Chicken, rice and broccoli	Pollo, arroz y brócoli	Tavuk, pilav ve brokoli	chicken-breast:150 rice:200c broccoli:100 olive-oil:5	meat
+chicken-rice	Chicken and rice	Arroz con pollo	Tavuklu pilav	rice:250c chicken-breast:150 olive-oil:10	grain
+cuban-rice	Rice with tomato and fried egg	Arroz a la cubana	Domates soslu pilav ve sahanda yumurta	rice:200c tomato-sauce:80 egg:60 olive-oil:10	grain
+macaroni-tomato	Macaroni with tomato	Macarrones con tomate	Domates soslu makarna	elbow-macaroni:90 tomato-sauce:70 grated-parmesan-cheese:10 olive-oil:5	grain
+bolognese	Spaghetti bolognese	Espaguetis a la boloñesa	Spagetti bolonez	spaghetti:90 ground-beef:100 tomato-sauce:80 onion:30 olive-oil:5	grain
+lentil-stew	Lentil stew	Lentejas guisadas	Mercimekli güveç	lentils:70 potato:80 carrot:40 onion:30 chorizo:25 olive-oil:5	veg
+chickpeas-spinach	Chickpeas with spinach	Garbanzos con espinacas	Ispanaklı nohut	chickpeas:70 spinach:100 garlic:5 olive-oil:10	veg
+spanish-omelette	Spanish omelette	Tortilla de patatas	İspanyol omleti	egg:100 potato:150 onion:30 olive-oil:15	breakfast
+mixed-salad	Mixed salad	Ensalada mixta	Karışık salata	lettuce:80 tomato:80 onion:20 canned-tuna-water:50 egg:50 olive-oil:10	salad
+chicken-salad	Grilled chicken with salad	Pollo a la plancha con ensalada	Izgara tavuk ve salata	chicken-breast:180 lettuce:60 tomato:80 olive-oil:10	meat
+salmon-potatoes	Salmon with potatoes	Salmón con patatas	Somon ve patates	salmon:150 potato:200 olive-oil:5	meat
+steak-fries	Steak and fries	Filete con patatas fritas	Biftek ve patates kızartması	beef-steak:150 frozen-fries:150 olive-oil:10	meat
+burger	Cheeseburger	Hamburguesa con queso	Çizburger	hamburger-bun:60 ground-beef:120 thin-sliced-cheese:20 lettuce:15 tomato:30 ketchup:15	street
+pizza	Margherita pizza	Pizza margarita	Margherita pizza	pizza-dough:120 tomato-sauce:50 mozzarella-cheese:80 olive-oil:5	street
+chicken-wrap	Chicken wrap	Wrap de pollo	Tavuklu dürüm	tortilla:60 chicken-breast:100 lettuce:30 tomato:40 cheddar-cheese:20	street
+ham-sandwich	Serrano ham baguette	Bocadillo de jamón	Serrano jambonlu baget	baguette:100 serrano-ham:40 tomato:30 olive-oil:5	street
+ham-cheese-toastie	Ham and cheese toastie	Sándwich mixto	Jambonlu kaşarlı tost	white-bread:60 sandwich-meat:30 thin-sliced-cheese:20 butter:5	street
+menemen	Menemen (Turkish scrambled eggs)		Menemen	egg:120 tomato:100 green-bell-pepper:40 onion:20 sunflower-oil:10	breakfast
+sucuklu-yumurta	Eggs with sausage		Sucuklu yumurta	egg:100 chorizo:40 butter:5	breakfast
+turkish-breakfast	Turkish breakfast plate		Serpme kahvaltı tabağı	bread:60 feta:40 tomato:60 cucumber:60 kalamata-olives:20 egg:50 honey:10 butter:8	breakfast
+cheese-omelette	Cheese omelette		Peynirli omlet	egg:120 gouda-cheese:30 butter:5	breakfast
+veggie-omelette	Veggie omelette		Sebzeli omlet	egg:150 spinach:30 white-mushroom:40 tomato:40 olive-oil:5	breakfast
+simit-cheese	Simit with cheese		Simit ve beyaz peynir	bagel:100 feta:40 tomato:50 cucumber:50	breakfast
+honey-butter-bread	Bread with butter and honey		Tereyağlı ballı ekmek	bread:60 butter:10 honey:15	breakfast
+egg-bread	Egg-fried bread		Yumurtalı ekmek	bread:60 egg:50 whole-milk:20 sunflower-oil:8	breakfast
+cilbir	Poached eggs with garlic yogurt		Çılbır	egg:110 plain-yogurt:150 butter:10 garlic:3 sweet-paprika:1	breakfast
+tahini-molasses	Tahini with molasses on bread		Tahin pekmez ekmek	bread:50 tahini:20 honey:15	breakfast
+oat-pancake	Banana oat pancakes		Yulaflı muzlu pankek	rolled-oats:50 egg:100 banana:100 olive-oil:5	breakfast
+overnight-oats	Overnight oats with blueberries		Yaban mersinli overnight yulaf	rolled-oats:50 greek-yogurt:100 whole-milk:100 blueberry:50 honey:5	breakfast
+chia-pudding	Chia pudding with strawberries		Çilekli chia pudingi	chia-seed:25 whole-milk:150 honey:8 strawberry:60	breakfast
+skyr-bowl	Skyr bowl with berries		Skyr ve meyve kasesi	skyr:200 blueberry:50 granola:20 honey:5	breakfast
+walnut-yogurt	Yogurt with walnuts and honey		Cevizli ballı yoğurt	plain-yogurt:150 walnuts:15 honey:10	breakfast
+cheese-borek	Cheese börek		Peynirli börek	puff-pastry:60 feta:40 egg:25 butter:5	breakfast
+spinach-gozleme	Spinach gözleme		Ispanaklı gözleme	tortilla:70 feta:40 spinach:60 butter:8	breakfast
+pogaca	Cheese poğaça		Peynirli poğaça	flour:40 butter:10 feta:20 egg:15 sunflower-oil:3	breakfast
+red-lentil-soup	Red lentil soup		Mercimek çorbası	lentils:40 onion:25 carrot:25 potato:20 butter:6	soup
+ezogelin	Ezogelin soup		Ezogelin çorbası	lentils:35 bulgur:15 tomato-paste:10 onion:20 butter:8	soup
+tomato-soup	Tomato soup		Domates çorbası	crushed-tomatoes:150 flour:10 butter:10 whole-milk:100	soup
+yayla-soup	Yogurt soup (yayla)		Yayla çorbası	plain-yogurt:100 rice:20 flour:8 egg-yolk:15 butter:8	soup
+chicken-vermicelli-soup	Chicken noodle soup		Tavuk suyu şehriye çorbası	chicken-broth:250 vermicelli-noodles:15 chicken-breast:40	soup
+mushroom-soup	Cream of mushroom soup		Kremalı mantar çorbası	white-mushroom:100 whole-milk:150 flour:10 butter:10 heavy-cream:20	soup
+vegetable-soup	Vegetable soup		Sebze çorbası	carrot:50 potato:60 zucchini:60 onion:25 olive-oil:8	soup
+grilled-kofte	Grilled meatballs (köfte)		Izgara köfte	ground-beef:150 onion:20 breadcrumbs:15 egg:10	meat
+chicken-shish	Chicken shish		Tavuk şiş	chicken-breast:180 plain-yogurt:20 olive-oil:5 red-bell-pepper:40	meat
+chicken-saute	Chicken sauté		Tavuk sote	chicken-breast:150 green-bell-pepper:50 tomato:70 onion:30 sunflower-oil:8	meat
+beef-saute	Beef sauté		Et sote	beef-strips:150 green-bell-pepper:50 tomato:70 onion:30 sunflower-oil:8	meat
+adana-kebab	Adana kebab with flatbread		Adana kebap (lavaşlı)	ground-beef:150 hot-paprika:2 tortilla:60 tomato:50 onion:20	meat
+lamb-tandir	Slow-roast lamb		Kuzu tandır	lamb-shoulder:200 onion:30 olive-oil:5	meat
+oven-chicken-potato	Oven chicken with potatoes		Fırın tavuk but ve patates	chicken-thighs:200 potato:200 olive-oil:10 tomato-paste:8	meat
+karniyarik	Karnıyarık (stuffed eggplant)		Karnıyarık	eggplant:200 ground-beef:80 onion:30 tomato:50 green-bell-pepper:20 sunflower-oil:15	meat
+musakka	Moussaka		Musakka	eggplant:150 ground-beef:70 tomato:60 onion:30 sunflower-oil:15	meat
+hunkar-begendi	Hünkar beğendi		Hünkar beğendi	lamb:120 eggplant:150 butter:15 whole-milk:60 flour:10 gouda-cheese:15	meat
+biber-dolma	Stuffed peppers with meat		Etli biber dolma	green-bell-pepper:150 rice:40 ground-beef:50 onion:20 tomato-paste:8 olive-oil:8	meat
+grilled-sea-bass	Grilled sea bass with salad		Izgara levrek ve salata	bass:200 arugula:30 tomato:50 olive-oil:8 lemon-juice:5	meat
+grilled-dorade	Grilled sea bream		Izgara çipura	dorade:200 olive-oil:8 lemon-juice:5 lettuce:40	meat
+mackerel-plate	Grilled mackerel		Izgara uskumru	mackerel:180 onion:20 lemon-juice:5 arugula:20	meat
+salmon-sweet-potato	Salmon with sweet potato and asparagus		Somon, tatlı patates ve kuşkonmaz	salmon:150 sweet-potato:200 asparagus:80 olive-oil:5	meat
+baked-salmon-veg	Baked salmon with vegetables		Fırında somon ve sebze	salmon:150 broccoli:100 zucchini:80 olive-oil:8	meat
+chicken-quinoa-bowl	Chicken quinoa bowl		Tavuklu kinoa kasesi	chicken-breast:130 quinoa:60 avocado:50 cherry-tomato:60 olive-oil:5	meat
+chicken-bulgur	Chicken with bulgur pilaf		Tavuk ve bulgur pilavı	chicken-breast:150 bulgur:200c olive-oil:5	meat
+baked-wings	Baked chicken wings		Fırın tavuk kanat	chicken-wing:200 olive-oil:5 sweet-paprika:2	meat
+kuru-fasulye	White bean stew (kuru fasulye)		Kuru fasulye	white-beans:70 onion:25 tomato-paste:10 butter:10	veg
+kuru-fasulye-pilav	Kuru fasulye with rice		Kuru fasulye ve pilav	white-beans:70 onion:25 tomato-paste:10 butter:10 rice:150c	veg
+nohut-yemegi	Chickpea stew		Nohut yemeği	chickpeas:70 onion:25 tomato-paste:10 butter:8	veg
+taze-fasulye	Green beans in olive oil		Zeytinyağlı taze fasulye	green-bean:200 onion:30 tomato:80 olive-oil:15	veg
+barbunya-pilaki	Borlotti beans in tomato (pilaki)		Barbunya pilaki	mature-seed-pinto-bean:60 onion:25 carrot:30 tomato-paste:8 olive-oil:12	veg
+artichoke-olive-oil	Artichokes in olive oil		Zeytinyağlı enginar	artichoke:150 carrot:30 potato:40 olive-oil:15	veg
+okra-stew	Okra stew		Bamya yemeği	okra:200 tomato:60 onion:30 sunflower-oil:15	veg
+spinach-dish	Spinach with rice		Ispanak yemeği	spinach:250 onion:30 rice:15 olive-oil:10	veg
+spinach-yogurt	Spinach with yogurt		Yoğurtlu ıspanak	spinach:150 plain-yogurt:100 garlic:2 olive-oil:5	veg
+mucver	Zucchini fritters		Kabak mücver	zucchini:150 egg:50 flour:25 feta:30 dill:3 sunflower-oil:8	veg
+potato-stew	Potato stew		Patates yemeği	potato:250 onion:30 tomato-paste:10 sunflower-oil:10	veg
+imam-bayildi	Imam bayildi		İmam bayıldı	eggplant:200 onion:50 tomato:60 garlic:5 olive-oil:20	veg
+cauliflower-dish	Cauliflower with tomato		Karnabahar yemeği	cauliflower:200 tomato:60 onion:25 olive-oil:12	veg
+leek-rice	Leek with rice		Pırasa yemeği	leek:200 carrot:40 rice:20 olive-oil:12	veg
+lentil-kofte	Lentil patties (mercimek köftesi)		Mercimek köftesi	lentils:50 bulgur:30 onion:20 tomato-paste:10 olive-oil:10	veg
+butter-rice	Buttered rice pilaf		Tereyağlı pirinç pilavı	rice:200c butter:10	grain
+bulgur-pilaf	Tomato bulgur pilaf		Domatesli bulgur pilavı	bulgur:200c tomato:80 onion:25 tomato-paste:10 butter:10	grain
+vermicelli-rice	Rice with vermicelli		Şehriyeli pilav	rice:180c vermicelli-noodles:15 butter:10	grain
+chickpea-rice	Rice with chickpeas		Nohutlu pilav	rice:180c canned-chickpeas:60 butter:10	grain
+ic-pilav	Ic pilav (spiced rice)		İç pilav	rice:200c raisins:10 pine-nuts-mediterranean:10 butter:12 chicken-liver:25	grain
+yogurt-pasta	Pasta with garlic yogurt		Yoğurtlu makarna	pasta:200c plain-yogurt:100 butter:10 garlic:2	grain
+baked-pasta	Baked pasta		Fırın makarna	pasta:200c gouda-cheese:40 whole-milk:80 egg:25 butter:8	grain
+manti	Manti (Turkish dumplings) with yogurt		Mantı	flour:70 ground-beef:50 onion:15 plain-yogurt:100 butter:10 tomato-paste:8	grain
+tuna-pasta	Tuna spaghetti		Ton balıklı makarna	spaghetti:200c canned-tuna-water:80 tomato-sauce:80 olive-oil:5	grain
+pesto-chicken-pasta	Pesto chicken penne		Pesto soslu tavuklu makarna	penne:200c chicken-breast:100 pesto-refrigerated-sauce:25	grain
+chicken-noodle-wok	Chicken noodle stir-fry		Tavuklu noodle	egg-noodle:200c chicken-breast:120 bok-choy:60 carrot:30 soy-sauce:15 sesame-oil:5	grain
+lahmacun	Lahmacun		Lahmacun	pizza-dough:80 ground-beef:50 tomato:40 onion:25 parsley:5 tomato-paste:10	street
+minced-pide	Pide with minced meat		Kıymalı pide	pizza-dough:150 ground-beef:80 tomato:30 green-bell-pepper:20 butter:8	street
+cheese-pide	Pide with cheese		Peynirli pide	pizza-dough:150 gouda-cheese:70 butter:8 egg:25	street
+doner-wrap	Beef döner wrap (dürüm)		Et döner dürüm	tortilla:80 beef-strips:100 tomato:30 onion:15 lettuce:15 sunflower-oil:5	street
+chicken-doner-wrap	Chicken döner wrap		Tavuk döner dürüm	tortilla:80 chicken-breast:110 tomato:30 lettuce:20 plain-yogurt:20	street
+iskender	Iskender kebab		İskender	bread:100 beef-strips:120 tomato-sauce:60 butter:20 plain-yogurt:80	street
+kofte-ekmek	Meatball sandwich (köfte ekmek)		Köfte ekmek	bread:100 ground-beef:100 tomato:40 onion:15	street
+tantuni	Tantuni wrap		Tantuni dürüm	tortilla:70 beef-strips:100 tomato:30 parsley:5 sunflower-oil:8	street
+fish-sandwich	Fish sandwich (balık ekmek)		Balık ekmek	bread:100 mackerel:120 onion:15 lettuce:15 lemon-juice:5	street
+wet-burger	Wet burger (ıslak hamburger)		Islak hamburger	hamburger-bun:70 ground-beef:70 tomato-sauce:40 garlic:2	street
+kumpir	Kumpir (loaded baked potato)		Kumpir	potato:300 butter:15 gouda-cheese:30 corn:30 cornichons:20 mayonnaise:15	street
+cig-kofte-wrap	Çiğ köfte wrap		Çiğ köfte dürüm	tortilla:50 bulgur:60 tomato-paste:20 onion:30 olive-oil:10 lettuce:20	street
+kasarli-tost	Cheese toastie (kaşarlı tost)		Kaşarlı tost	white-bread:60 gouda-cheese:40 butter:5	street
+mixed-tost	Mixed toastie		Karışık tost	white-bread:60 gouda-cheese:30 sandwich-meat:30 tomato:30 butter:5	street
+sucuklu-tost	Toastie with sausage		Sucuklu kaşarlı tost	white-bread:60 gouda-cheese:30 chorizo:30 butter:5	street
+tuna-sandwich	Tuna sandwich		Ton balıklı sandviç	whole-wheat-bread:70 canned-tuna-water:60 mayonnaise:10 lettuce:15 tomato:30	street
+turkey-sandwich	Turkey sandwich		Hindi sandviç	whole-wheat-bread:70 turkey-breast:60 lettuce:15 tomato:30 mustard:5	street
+falafel-wrap	Falafel wrap		Falafel dürüm	pita-bread:70 falafel:80 commercial-hummus:30 lettuce:20 tomato:30	street
+hotdog	Hot dog		Sosisli sandviç	hot-dog-bun:60 hot-dog:60 ketchup:10 mustard:5	street
+shepherd-salad	Shepherd's salad		Çoban salatası	tomato:100 cucumber:80 onion:20 green-bell-pepper:30 olive-oil:10 parsley:3	salad
+green-salad	Green salad		Mevsim salata	lettuce:80 tomato:60 cucumber:60 carrot:20 olive-oil:8 lemon-juice:5	salad
+gavurdagi	Gavurdağı salad		Gavurdağı salatası	tomato:100 walnuts:15 onion:20 olive-oil:10 parsley:3 pomegranate:20	salad
+piyaz	White bean salad (piyaz)		Piyaz	canned-white-beans:120 onion:20 tomato:40 egg:30 parsley:3 olive-oil:10	salad
+tuna-salad	Tuna salad		Ton balıklı salata	canned-tuna-water:80 lettuce:60 tomato:60 cucumber:40 olive-oil:8 egg:50	salad
+caesar-chicken	Chicken Caesar salad		Tavuklu sezar salata	chicken-breast:120 romaine-lettuce:80 parmesan-cheese:15 caesar-dressing:20	salad
+eggplant-salad	Smoky eggplant salad		Közlenmiş patlıcan salatası	eggplant:200 garlic:3 olive-oil:10 lemon-juice:5	salad
+ezme	Spicy tomato ezme		Acılı ezme	tomato:100 onion:30 red-bell-pepper:30 olive-oil:10 tomato-paste:5 parsley:3	salad
+cacik	Cacık (yogurt and cucumber)		Cacık	plain-yogurt:150 cucumber:80 garlic:2 fresh-mint:1 olive-oil:3	salad
+haydari	Haydari		Haydari	plain-yogurt:100 feta:20 garlic:2 dill:2	salad
+hummus-pita	Hummus with pita		Humus ve pita	commercial-hummus:80 pita-bread:60	salad
+kisir	Kısır (bulgur salad)		Kısır	bulgur:60 tomato-paste:12 tomato:50 green-onion:15 parsley:5 olive-oil:10 lemon-juice:5	salad
+quinoa-salad	Quinoa salad		Kinoa salatası	quinoa:60 cucumber:60 cherry-tomato:60 feta:20 olive-oil:8 lemon-juice:5 parsley:3	salad
+boiled-eggs	2 boiled eggs		2 haşlanmış yumurta	egg:100	snack
+nut-handful	Handful of mixed nuts		Bir avuç karışık kuruyemiş	mixed-nuts:30	snack
+apple-peanut	Apple with peanut butter		Elma ve fıstık ezmesi	apple:180 peanut-butter:20	snack
+apricot-walnut	Dried apricots and walnuts		Kuru kayısı ve ceviz	dried-apricots:30 walnuts:20	snack
+banana-almond	Banana with almond butter		Muz ve badem ezmesi	banana:120 almond-butter:15	snack
+greek-yogurt-honey	Greek yogurt with honey		Ballı süzme yoğurt	greek-yogurt:170 honey:10	snack
+cottage-cucumber	Cottage cheese with cucumber		Lor peyniri ve salatalık	cottage-cheese:150 cucumber:80	snack
+tuna-crackers	Tuna on crackers		Ton balıklı kraker	canned-tuna-water:60 water-crackers:20	snack
+ricecake-pb	Rice cakes with peanut butter		Pirinç patlağı ve fıstık ezmesi	rice-cakes:20 peanut-butter:20	snack
+simit	Simit		Simit	bagel:100	snack
+cheese-walnut	Cheese and walnuts		Peynir ve ceviz	feta:40 walnuts:15	snack
+sutlac	Rice pudding (sütlaç)		Sütlaç	whole-milk:200 rice:20 sugar:30 egg-yolk:10	sweet
+muhallebi	Milk pudding (muhallebi)		Muhallebi	whole-milk:200 cornstarch:15 sugar:25	sweet
+irmik-helvasi	Semolina halva		İrmik helvası	semolina-flour:30 butter:15 sugar:25 whole-milk:100	sweet
+baklava	Baklava (2 pieces)		Baklava (2 dilim)	flour:20 butter:15 pistachio:15 sugar:20	sweet
+lokum	Turkish delight (4 pieces)		Lokum (4 adet)	sugar:40 cornstarch:12 pistachio:5	sweet
+ice-cream	Vanilla ice cream		Vanilyalı dondurma	vanilla-ice-cream:100	sweet
+fruit-salad	Fruit salad		Meyve salatası	banana:80 apple:80 orange:80 green-kiwifruit:60	sweet
+baked-apple	Baked apple with walnuts		Cevizli tarçınlı fırın elma	apple:200 walnuts:15 cinnamon:1 honey:10	sweet
+plain-cake	Plain cake slice		Sade kek dilimi	flour:30 sugar:20 egg:25 butter:15 whole-milk:15	sweet
+dark-choc	Dark chocolate (30 g)		Bitter çikolata (30 g)	dark-chocolate:30	sweet
+dates-walnut	Dates stuffed with walnuts		Cevizli hurma	dried-dates:40 walnuts:15	sweet
+ayran	Ayran		Ayran	plain-yogurt:120 water:130 salt:1	drink
+turkish-coffee	Turkish coffee with sugar		Orta şekerli Türk kahvesi	espresso:60 sugar:5	drink
+tea-sugar	Tea with 2 sugar cubes		Çay (2 küp şeker)	black-tea:100 sugar:6	drink
+fresh-oj	Fresh orange juice		Taze portakal suyu	orange-juice:250	drink
+sahlep	Sahlep		Sahlep	whole-milk:200 sugar:15 cornstarch:8 cinnamon:1	drink
+milk-honey	Milk with honey		Ballı süt	whole-milk:250 honey:10	drink
+banana-milk	Banana milk		Muzlu süt	whole-milk:250 banana:100	drink
+kefir-glass	Kefir		Kefir	kefir:250	drink
