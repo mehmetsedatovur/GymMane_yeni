@@ -47,20 +47,62 @@ class LibraryFood {
 }
 
 class ReadyDish {
-  const ReadyDish({required this.id, required this.names, required this.items});
+  const ReadyDish({required this.id, required this.names, required this.items, this.cat = ''});
 
   final String id;
   final Map<String, String> names;
   final List<(String slug, double grams, bool cooked)> items;
+  final String cat;
 
   String nameFor(String lang) => names[lang] ?? names[lang.split('_').first] ?? names['en'] ?? '';
 }
+
+const kDishCats = ['breakfast', 'soup', 'meat', 'veg', 'grain', 'street', 'salad', 'snack', 'sweet', 'drink'];
+
+const _dishCatEmoji = {
+  'breakfast': '🍳',
+  'soup': '🥣',
+  'meat': '🍗',
+  'veg': '🥘',
+  'grain': '🍚',
+  'street': '🌯',
+  'salad': '🥗',
+  'snack': '🥜',
+  'sweet': '🍮',
+  'drink': '🥛',
+};
+
+const _dishCatNames = <String, Map<String, String>>{
+  'breakfast': {'en': 'Breakfast', 'es': 'Desayuno', 'tr': 'Kahvaltı'},
+  'soup': {'en': 'Soups', 'es': 'Sopas', 'tr': 'Çorbalar'},
+  'meat': {'en': 'Meat & fish', 'es': 'Carne y pescado', 'tr': 'Et, tavuk, balık'},
+  'veg': {'en': 'Veggies & legumes', 'es': 'Verduras y legumbres', 'tr': 'Sebze & baklagil'},
+  'grain': {'en': 'Rice & pasta', 'es': 'Arroz y pasta', 'tr': 'Pilav & makarna'},
+  'street': {'en': 'Wraps & fast food', 'es': 'Bocatas y rápida', 'tr': 'Sokak lezzetleri'},
+  'salad': {'en': 'Salads & sides', 'es': 'Ensaladas y entrantes', 'tr': 'Salata & meze'},
+  'snack': {'en': 'Snacks', 'es': 'Snacks', 'tr': 'Atıştırmalık'},
+  'sweet': {'en': 'Desserts', 'es': 'Postres', 'tr': 'Tatlılar'},
+  'drink': {'en': 'Drinks', 'es': 'Bebidas', 'tr': 'İçecekler'},
+};
+
+const _dishAllNames = {'en': 'All', 'es': 'Todo', 'tr': 'Tümü'};
+
+String dishCatName(String cat, String lang) {
+  final n = _dishCatNames[cat];
+  if (n == null) return cat;
+  return n[lang] ?? n[lang.split('_').first] ?? n['en'] ?? cat;
+}
+
+String dishCatEmoji(String cat) => _dishCatEmoji[cat] ?? '🍽️';
+
+String dishAllName(String lang) => _dishAllNames[lang] ?? _dishAllNames[lang.split('_').first] ?? 'All';
 
 String foldText(String s) {
   const from = 'áàâäãåąéèêëęíìîïıóòôöõőøúùûüűñńçćčłśşšźżžğýÿёيكةأإآ';
   const to = 'aaaaaaaeeeeeiiiiiooooooouuuuunnccclssszzzgyyеیکهااا';
   final b = StringBuffer();
   for (final r in s.toLowerCase().runes) {
+    if (r == 0x307) continue;
     final c = String.fromCharCode(r);
     final i = from.indexOf(c);
     b.write(i < 0 ? c : to[i]);
@@ -91,6 +133,7 @@ class FoodLibrary {
     final head = lines.first.split('\t');
     final items = head.indexOf('items');
     if (items < 0) return;
+    final catIx = head.indexWhere((h) => h.trim() == 'cat');
     for (final line in lines.skip(1)) {
       final c = line.split('\t');
       if (c.length <= items) continue;
@@ -105,15 +148,18 @@ class FoodLibrary {
             if (part.split(':') case [final slug, final amount] when slug.isNotEmpty)
               (slug, double.tryParse(amount.replaceAll('c', '')) ?? 0, amount.endsWith('c')),
         ],
+        cat: catIx < 0 || catIx >= c.length ? '' : c[catIx].trim(),
       ));
     }
   }
 
-  static List<ReadyDish> searchDishes(String query, String lang) {
+  static List<ReadyDish> searchDishes(String query, String lang, {String? cat}) {
     final words = foldText(query.trim()).split(RegExp(r'\s+')).where((w) => w.isNotEmpty).toList();
     return [
       for (final d in dishes)
-        if (words.every('${foldText(d.nameFor(lang))} ${foldText(d.names['en'] ?? '')}'.contains)) d,
+        if ((cat == null || d.cat == cat) &&
+            words.every('${foldText(d.nameFor(lang))} ${foldText(d.names['en'] ?? '')}'.contains))
+          d,
     ];
   }
 
