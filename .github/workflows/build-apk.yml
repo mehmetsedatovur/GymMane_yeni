@@ -78,7 +78,7 @@ jobs:
     runs-on: ubuntu-latest
     # Only when manually dispatched with a tag. The release body is left empty
     # on purpose so it can be filled in by hand after publishing.
-    if: github.event_name == 'workflow_dispatch'
+    if: ${{ false }}
 
     # Reproducible build: keep the pub cache at a fixed path inside the workspace
     # (/home/runner/work/GymMane/GymMane/.pub-cache). F-Droid relocates its build
